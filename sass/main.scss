@@ -104,4 +104,26 @@ body{
             box-shadow: 1px 1px 5px $clr-shadow;
         }
     }
+    @media only screen and (max-width: 375px) {
+        .todo-cont{
+            width: 80%;
+
+            .title{
+                h1{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+      }
+      @media only screen and (max-width: 1336px) {
+        .todo-cont{
+            width: 70%;
+
+            .title{
+                h1{
+                    font-size: 2rem;
+                }
+            }
+        }
+      }
 }
