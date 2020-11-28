@@ -26,7 +26,7 @@ body{
 .dark{
     background-color: $clr-blue-d-v;
 
-    .todo-input{
+    .todo-input, .todo-list{
         background-color: $clr-blue-d-ds;
 
         .text{
@@ -37,7 +37,7 @@ body{
 .light{
     background-color: hsl(0, 0%, 98%);
 
-    .todo-input{
+    .todo-input, .todo-list{
         background-color: $clr-light-gray-v;
 
         .text{
@@ -93,8 +93,15 @@ body{
             width: 100%;
             height: 3rem;
             padding: 1rem;
-            box-shadow: 1px 1px 10px hsl(237, 14%, 26%);
+            box-shadow: 1px 1px 5px $clr-shadow;
             border-radius: 2px;
+            margin-bottom: 2rem;
+        }
+
+        .todo-list{
+            height: 70%;
+            border-radius: 2px;
+            box-shadow: 1px 1px 5px $clr-shadow;
         }
     }
 }

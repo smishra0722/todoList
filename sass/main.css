@@ -31,11 +31,11 @@ body {
   background-color: #161722;
 }
 
-.dark .todo-input {
+.dark .todo-input, .dark .todo-list {
   background-color: #25273c;
 }
 
-.dark .todo-input .text {
+.dark .todo-input .text, .dark .todo-list .text {
   color: #e4e5f1;
 }
 
@@ -43,11 +43,11 @@ body {
   background-color: #fafafa;
 }
 
-.light .todo-input {
+.light .todo-input, .light .todo-list {
   background-color: #fafafa;
 }
 
-.light .todo-input .text {
+.light .todo-input .text, .light .todo-list .text {
   color: #25273c;
 }
 
@@ -112,8 +112,16 @@ body {
   width: 100%;
   height: 3rem;
   padding: 1rem;
-  -webkit-box-shadow: 1px 1px 10px #393a4c;
-          box-shadow: 1px 1px 10px #393a4c;
+  -webkit-box-shadow: 1px 1px 5px #0c0d13;
+          box-shadow: 1px 1px 5px #0c0d13;
   border-radius: 2px;
+  margin-bottom: 2rem;
+}
+
+.container .todo-cont .todo-list {
+  height: 70%;
+  border-radius: 2px;
+  -webkit-box-shadow: 1px 1px 5px #0c0d13;
+          box-shadow: 1px 1px 5px #0c0d13;
 }
 /*# sourceMappingURL=main.css.map */
