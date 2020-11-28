@@ -1,0 +1,100 @@
+@import 'variables';
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 1.125rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+button{
+    all: unset;
+}
+input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+}
+body{
+    transition: all .2s ease-in-out;
+}
+.dark{
+    background-color: $clr-blue-d-v;
+
+    .todo-input{
+        background-color: $clr-blue-d-ds;
+
+        .text{
+            color: $clr-blue-gray-l-hv;
+        }
+    }
+}
+.light{
+    background-color: hsl(0, 0%, 98%);
+
+    .todo-input{
+        background-color: $clr-light-gray-v;
+
+        .text{
+            color: $clr-blue-d-ds;
+        }
+    }
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+
+    .top{
+        width: 100%;
+        height: 35%;
+        background-image: url('../images/bg-desktop-dark.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .todo-cont{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 80%;
+        width: 50%;
+        background-color: transparent;
+
+        .title{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            background-color: transparent;
+            margin-bottom: 1.5rem;
+            h1{
+                font-size: 3rem;
+                letter-spacing: .5rem;
+                color: $clr-white;
+                
+            }
+            .toggle{
+                cursor: pointer;
+                font-size: 2rem;
+                color: $clr-white;
+            }
+        }
+
+        .todo-input{
+            width: 100%;
+            height: 3rem;
+            padding: 1rem;
+            box-shadow: 1px 1px 10px hsl(237, 14%, 26%);
+            border-radius: 2px;
+        }
+    }
+}
